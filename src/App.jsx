@@ -16,22 +16,10 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-
-  // Figure out whats the point of a timeout
-  const [load, upDateLoad] = useState(true);
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      upDateLoad(false);
-    }, 1200);
-
-    return () => clearTimeout(timer);
-  }, []);
-
-
   return (
     <>
       <BrowserRouter>
-        <div className="App" id={load ? "no-scroll" : "scroll"}>
+        <div className="App">
           <NavBar />
           <Routes>
             <Route path="/" element={<Home />}/>
