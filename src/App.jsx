@@ -3,7 +3,6 @@ import NavBar from './components/Navbar';
 import Home from './components/Home';
 import Projects from './components/Projects';
 import Resume from './components/Resume';
-//import About from './components/About';
 import Footer from './components/Footer';
 
 import {
@@ -12,7 +11,6 @@ import {
   Routes,
   Navigate
 } from "react-router-dom";
-//import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";

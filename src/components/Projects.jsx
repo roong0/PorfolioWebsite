@@ -1,8 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
-import map from "../assets/map.png"
-import stock from "../assets/stock.png"
+import SiteImage from "../assets/Site.png"
+import stock from "../assets/StockSearcher.png"
+import chip8 from "../assets/Chip8Emulator.png"
 
 function Projects() {
   return (
@@ -15,14 +16,24 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-        <Col md={4} className="project-card">
+          <Col md={4} className="project-card">
             <ProjectCard
-                imgPath={map}
+                imgPath={SiteImage}
                 isBlog={false}
                 title="Personal Website"
                 description="A website to display my abilities and skills. It was built using React and Bootstrap CSS."
-                ghLink="https://github.com/"
+                ghLink="https://github.com/roong0/PorfolioWebsite"
                 demoLink=""
+              />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+                imgPath={chip8}
+                isBlog={false}
+                title="Chip8 Emulator"
+                description="An emulator for the Chip8 interpreted programming language. It is capable of running games such as Space Invaders and Pong. It was built using Javascript and playable on a HTML page."
+                ghLink="https://github.com/"
+                demoLink="https://chip8.roong.net"
               />
           </Col>
           <Col md={4} className="project-card">
@@ -30,19 +41,8 @@ function Projects() {
                 imgPath={stock}
                 isBlog={false}
                 title="Stock Searcher"
-                description="A website allowing users to search for different stocks and find relevant information about them. It was build using React, Material UI and deployed using vercel."
-                ghLink="https://github.com/"
-                demoLink="map.yardsticks.net"
-              />
-          </Col>
-          <Col md={4} className="project-card">
-            <ProjectCard
-                imgPath={map}
-                isBlog={false}
-                title="Base Map"
-                description="A website which displays the location of military bases using open source data. It was build using React, Material-UI and deployed with firebase."
-                ghLink="https://github.com/"
-                demoLink="https://map.yardsticks.net"
+                description="A website allowing users to search for different stocks and find relevant information about them. It was build using React, Material UI. (Work in progress)"
+                ghLink="https://github.com/roong0/StockSearcher"
               />
           </Col>
         </Row>
